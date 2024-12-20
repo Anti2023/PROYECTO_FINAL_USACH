@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cat Facts App</title>
+    <link rel="stylesheet" href="css/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-    <h1>Hola</h1>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="/" class="logo">Cat Facts</a>
+                <ul class="navbar-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="navbar-toggle" id="navbar-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="card">Card Izquierda</div>
+        <div id="fact-container">
+            <p id="fact">Presiona el botón para obtener un hecho sobre gatos.</p>
+        </div>
+        <div class="card">Card Derecha</div>
+    </main>
+    <button id="new-fact-btn">Nuevo hecho</button>
+    <!-- Nuevo contenedor para la trivia -->
+    <div id="trivia-container">
+        <h3>¡Prueba tu conocimiento sobre gatos!</h3>
+        <p id="trivia-question">Presiona el botón para iniciar la trivia.</p>
+        <button id="start-trivia-btn">Iniciar Trivia</button>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2024 Cat Facts App. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="proyecto/js/script.js"></script>
 </body>
+
 </html>
