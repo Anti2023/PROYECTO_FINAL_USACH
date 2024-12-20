@@ -1,1 +1,0 @@
-const gatos=1;
