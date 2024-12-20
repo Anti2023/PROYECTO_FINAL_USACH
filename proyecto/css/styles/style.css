@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/* Variables */
+header {
+  background-color: rgb(124, 241, 241);
+  padding: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(124, 241, 241);
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.social-icons {
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+  transform: scale(1.1);
+}
+
+.copyright {
+  font-size: 14px;
+  color: white;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f4a261;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url("../../assets/images/gato_sirena.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center;
+  cursor: url("../../assets/images/mascota.png") 16 16, auto;
+}
+
+#fact-container {
+  width: 30%; /* Ajustamos el tamaño del contenedor */
+  padding: 1rem;
+  border: 5px solid #e026ab;
+  border-radius: 10px;
+  background-color: rgb(239, 160, 205);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+button {
+  align-self: center; /* Alinea el botón debajo del fact-container */
+  margin-bottom: 80px;
+  padding: 0.5rem 1rem;
+  background-color: #90f3e7;
+  color: rgb(117, 110, 110);
+  border: none;
+  border-radius: 5px;
+  cursor: url("../../assets/images/mascota.png") 16 16, auto;
+}
+
+button:hover {
+  background-color: #b8eae4;
+}
+
+#fact {
+  font-size: 20px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly; /* Para distribuir equitativamente los elementos */
+  align-items: center; /* Alinea los elementos al principio del eje vertical */
+  gap: 1rem; /* Espacio entre los elementos */
+  height: calc(100vh - 140px); /* Ajustar la altura del main para llenar la pantalla */
+  padding: 2rem;
+  margin-top: 80px;
+  /* Ajusta la altura del main (resta header y footer) */
+}
+
+.card {
+  width: 30%; /* Ajustamos el tamaño de las cards */
+  height: 300px; /* Aseguramos una altura para las imágenes */
+  background-color: #fff; /* Color de fondo por defecto */
+  border-radius: 8px;
+  border: 5px solid #e026ab;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #000; /* Texto visible si no hay imagen */
+  transition: background-image 1s ease-in-out;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+  background-color: rgb(124, 241, 241);
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar-links a:hover {
+  color: #e9ecef;
+}
+
+/* Estilos para el toggle en dispositivos pequeños */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+#trivia-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Alinea el contenido internamente */
+  align-items: center;
+  /* Asegura que el contenido esté centrado */
+  margin: 20px auto;
+  /* Centra el contenedor horizontalmente */
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(215, 167, 215, 0.703);
+  text-align: center;
+  width: 40%;
+  /* Asegúrate de que el contenedor tenga un ancho definido */
+}
+
+#trivia-question {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#trivia-answer {
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#submit-answer-btn {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#submit-answer-btn:hover {
+  background-color: #27ae60;
+}
+
+#trivia-feedback {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Media Queries */
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .navbar-links li {
+    margin: 1rem 0;
+  }
+  .navbar-toggle {
+    display: flex;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+  main {
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 120px;
+  }
+  .card {
+    width: 80%;
+    height: 200px;
+  }
+  #fact-container {
+    width: 80%;
+    height: auto;
+  }
+  button {
+    margin-bottom: 40px;
+  }
+  #trivia-container {
+    width: 80%;
+  }
+}
+/* Pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+  .navbar-links {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 45%;
+    height: 250px;
+  }
+  #fact-container {
+    width: 45%;
+  }
+  button {
+    margin-bottom: 60px;
+  }
+  #trivia-container {
+    width: 60%;
+  }
+}
+/* Pantallas grandes (escritorios) */
+@media (min-width: 1025px) {
+  .card {
+    width: 30%;
+    height: 300px;
+  }
+  #fact-container {
+    width: 30%;
+  }
+  #trivia-container {
+    width: 40%;
+  }
+}
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .navbar-links li {
+    margin: 1rem 0;
+  }
+  .navbar-toggle {
+    display: flex;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
