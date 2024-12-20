@@ -1,0 +1,13 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("../../assets/images/gato_sirena.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+    cursor: url("../../assets/images/mascota.png") 16 16, auto;
+}
