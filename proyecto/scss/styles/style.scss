@@ -1,0 +1,11 @@
+// scss/styles/style.scss
+@use 'variables' as *; // Cargar _variables.scss
+@use 'header' as *; // Cargar _header.scss
+@use 'footer' as *; // Cargar _footer.scss
+@use 'body' as *; //cargar _body
+@use 'fact-container' as *; //cargar _fact-container
+@use 'main' as *; //cargar main
+@use 'card' as *; // cargar _card
+@use 'navbar' as *; //cargar _navbar
+@use 'trivia-container' as *; //cargar _trivia-container
+@use 'media-queries' as *; //cargar _media-queries

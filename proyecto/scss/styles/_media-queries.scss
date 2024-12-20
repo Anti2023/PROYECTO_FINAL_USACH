@@ -1,0 +1,110 @@
+/* Media Queries */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .navbar-links li {
+        margin: 1rem 0;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 1rem;
+        margin-top: 120px;
+    }
+
+    .card {
+        width: 80%;
+        height: 200px;
+    }
+
+    #fact-container {
+        width: 80%;
+        height: auto;
+    }
+
+    button {
+        margin-bottom: 40px;
+    }
+
+    #trivia-container {
+        width: 80%;
+    }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+    .navbar-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+        height: 250px;
+    }
+
+    #fact-container {
+        width: 45%;
+    }
+
+    button {
+        margin-bottom: 60px;
+    }
+
+    #trivia-container {
+        width: 60%;
+    }
+}
+
+/* Pantallas grandes (escritorios) */
+@media (min-width: 1025px) {
+    .card {
+        width: 30%;
+        height: 300px;
+    }
+
+    #fact-container {
+        width: 30%;
+    }
+
+    #trivia-container {
+        width: 40%;
+    }
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .navbar-links li {
+        margin: 1rem 0;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
