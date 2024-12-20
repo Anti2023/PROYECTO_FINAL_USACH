@@ -1,0 +1,39 @@
+#fact-container {
+    width: 30%; /* Ajustamos el tamaño del contenedor */
+    padding: 1rem;
+    border: 5px solid #e026ab;
+    border-radius: 10px;
+    background-color: rgb(239, 160, 205);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+}
+
+button {
+    align-self: center; /* Alinea el botón debajo del fact-container */
+    margin-bottom: 80px;
+    padding: 0.5rem 1rem;
+    background-color: #90f3e7;
+    color: rgb(117, 110, 110);
+    border: none;
+    border-radius: 5px;
+    cursor: url('../../assets/images/mascota.png') 16 16, auto;
+}
+
+
+
+button:hover {
+    background-color: #b8eae4;
+}
+
+#fact {
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+

@@ -1,0 +1,10 @@
+main {
+    display: flex;
+    justify-content: space-evenly; /* Para distribuir equitativamente los elementos */
+    align-items:center; /* Alinea los elementos al principio del eje vertical */
+    gap: 1rem; /* Espacio entre los elementos */
+    height: calc(100vh - 140px); /* Ajustar la altura del main para llenar la pantalla */
+    padding: 2rem;
+    margin-top: 80px; 
+    /* Ajusta la altura del main (resta header y footer) */
+}
